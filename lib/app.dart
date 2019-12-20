@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'screens/home/home.dart';
 import 'screens/splash/splash.dart';
 
 class App extends StatelessWidget{
