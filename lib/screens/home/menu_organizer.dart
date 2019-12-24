@@ -41,7 +41,7 @@ class MenuOrganizer extends StatelessWidget {
         ],
       );
 
-  Widget _buildDecoratedImage(int imageIndex) => Expanded(
+  Widget _buildDecoratedImage(int imageIndex) => Flexible(
         child: Stack(
           children: <Widget>[
             GestureDetector(
@@ -78,7 +78,7 @@ class MenuOrganizer extends StatelessWidget {
                       maxLines: 1,
                       style: Theme.of(_context)
                           .textTheme
-                          .title
+                          .headline
                           .copyWith(color: Colors.white)),
                 ),
               ),
@@ -89,9 +89,9 @@ class MenuOrganizer extends StatelessWidget {
 
   void _openDetailPage(int imageIndex) {
     switch(imageIndex){
-      case 1: Navigator.push(_context,MaterialPageRoute(builder: (context) => AttractMoney()));
+      case 1: Navigator.push(_context,MaterialPageRoute(builder: (context) => AttractMoney(context)));
               break;
-      case 2: Navigator.push(_context,MaterialPageRoute(builder: (context) => AttractMoney()));
+      case 2: Navigator.push(_context,MaterialPageRoute(builder: (context) => AttractMoney(context)));
               break;
       }
   }

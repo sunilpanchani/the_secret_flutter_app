@@ -1,12 +1,36 @@
+import 'dart:ui';
+
 import 'package:flutter/material.dart';
 import 'screens/splash/splash.dart';
+import 'style.dart';
 
-class App extends StatelessWidget{
+class App extends StatelessWidget {
   @override
-  Widget build(BuildContext context){
+  Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'The Secret',
-      home: Splash(),
-    );
+        title: 'The Secret',
+        home: Splash(),
+        theme: ThemeData(
+          // Define the default brightness and colors.
+          brightness: Brightness.dark,
+          primaryColor: Colors.lightBlue[800],
+          accentColor: Colors.cyan[600],
+
+          // Define the default font family.
+          fontFamily: 'Georgia',
+
+          // Define the default TextTheme. Use this to specify the default
+          // text styling for headlines, titles, bodies of text, and more.
+          textTheme: TextTheme(
+            headline: TextStyle(fontSize: 22.0, fontWeight: FontWeight.bold),
+           // title: TextStyle(fontSize: 22.0, fontStyle: FontStyle.italic),
+           // body1: TextStyle(fontSize: 18.0, fontFamily: 'Hind', fontStyle: FontStyle.normal),
+            title: TitleTextStyle,
+          subtitle: SubTitleTextStyle,
+          caption: CaptionTextStyle,
+          body1: Body1TextStyle,
+          
+          ),
+        ));
   }
 }
