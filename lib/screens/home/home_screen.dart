@@ -1,20 +1,14 @@
 import 'package:flutter/material.dart';
+import 'package:the_secret/screens/home/menu_organizer.dart';
 
 class HomeScreen extends StatelessWidget {
-   @override
+  @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
         title: Text("Welcome to The Secret"),
       ),
-      body: Center(
-        child: RaisedButton(
-          onPressed: () {
-            Navigator.pop(context);
-          },
-          child: Text('Go back!'),
-        ),
-      ),
+      body: MenuOrganizer(context),
     );
   }
 }
