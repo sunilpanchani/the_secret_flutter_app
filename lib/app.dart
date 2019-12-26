@@ -27,7 +27,7 @@ class App extends StatelessWidget {
           subtitle: SubTitleTextStyle,
           caption: CaptionTextStyle,
           body1: Body1TextStyle,
-          
+          headline: HeadlineTextStyle,
           ),
         ));
   }

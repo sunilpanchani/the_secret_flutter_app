@@ -9,6 +9,7 @@ class AttractMoney extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+
     final topContent = Container(
       height: MediaQuery.of(context).size.height * 0.3,
       decoration: BoxDecoration(
@@ -20,17 +21,17 @@ class AttractMoney extends StatelessWidget {
     );
 
     final middleContentTitle = Container(
-      height: MediaQuery.of(context).size.height * 0.08,
+      height: MediaQuery.of(context).size.height * 0.09,
       child: Center(
         child: Text(
           AttractMoney_Title,
-          style: Theme.of(context).textTheme.title,
+          style: Theme.of(context).textTheme.headline,
         ),
       ),
     );
 
     final middleContentButtons = Container(
-      height: MediaQuery.of(context).size.height * 0.05,
+      height: MediaQuery.of(context).size.height * 0.07,
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
         crossAxisAlignment: CrossAxisAlignment.center,
@@ -40,22 +41,24 @@ class AttractMoney extends StatelessWidget {
             child: Text(
               'Watch Video',
               style: TextStyle(
-                color: Colors.white,
+                color: Colors.black,
                 fontSize: 16.0,
-                fontWeight: FontWeight.bold,
+                fontWeight: FontWeight.w400,
               ),
             ),
+            color: Colors.lime,
           ),
           RaisedButton(
             onPressed: listenAudio,
             child: Text(
               'Listen Technique',
               style: TextStyle(
-                color: Colors.white,
+                color: Colors.black,
                 fontSize: 16.0,
-                fontWeight: FontWeight.bold,
+                fontWeight: FontWeight.w400,
               ),
             ),
+            color: Colors.lime,
           ),
         ],
       ),

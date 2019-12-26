@@ -9,7 +9,7 @@ class AmVideoPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Video Player'),
+        title: Text('Attract Money'),
       ),
       body: ListView(
         children: <Widget>[

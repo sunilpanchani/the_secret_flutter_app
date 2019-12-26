@@ -69,6 +69,7 @@ class MenuOrganizer extends StatelessWidget {
               child: Padding(
                 padding: EdgeInsets.fromLTRB(0, 155.0, 0, 0),
                 child: Container(
+                  padding: EdgeInsets.all(5.0),
                   decoration:
                       BoxDecoration(color: Colors.blueAccent.withOpacity(0.5)),
                   height: 40.0,
