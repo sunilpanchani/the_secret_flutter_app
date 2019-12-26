@@ -35,9 +35,37 @@ class MenuOrganizer extends StatelessWidget {
             _buildImageRow(1),
             _buildImageRow(3),
             _buildImageRow(5),
+            _resourceBanner(),
           ],
         ),
       );
+
+  Widget _resourceBanner(){
+    return Row(
+      children: <Widget>[
+         GestureDetector(
+              onTap: () {
+                //_openDetailPage(imageIndex);
+              },
+              child: Container(
+                /*
+                decoration: BoxDecoration(
+                  border: Border.all(width: 1, color: Colors.black38),
+                  borderRadius:
+                      const BorderRadius.all(const Radius.circular(8)),
+                ),
+                */
+               // margin: const EdgeInsets.all(0.3),
+                child: Image.asset(
+                  'assets/home_screen/resources.png',
+                  fit: BoxFit.cover,
+                ),
+                //padding: EdgeInsets.fromLTRB(0, 155.0, 0,0),
+              ),
+            ),
+      ],
+    );
+  }    
   Widget _buildImageRow(int imageIndex) => Row(
         children: [
           _buildDecoratedImage(imageIndex),
