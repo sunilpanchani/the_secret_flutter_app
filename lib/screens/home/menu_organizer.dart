@@ -102,13 +102,6 @@ class MenuOrganizer extends StatelessWidget {
                   )
               );
               break;
-      case 2: Navigator.push(
-                _context,
-                MaterialPageRoute(
-                  builder: (context) => AttractMoney(context)
-                  )
-              );
-              break
       }
   }
 }
