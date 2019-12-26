@@ -22,10 +22,8 @@ class App extends StatelessWidget {
           // Define the default TextTheme. Use this to specify the default
           // text styling for headlines, titles, bodies of text, and more.
           textTheme: TextTheme(
-            headline: TextStyle(fontSize: 22.0, fontWeight: FontWeight.bold),
-           // title: TextStyle(fontSize: 22.0, fontStyle: FontStyle.italic),
-           // body1: TextStyle(fontSize: 18.0, fontFamily: 'Hind', fontStyle: FontStyle.normal),
-            title: TitleTextStyle,
+   
+          title: TitleTextStyle,
           subtitle: SubTitleTextStyle,
           caption: CaptionTextStyle,
           body1: Body1TextStyle,

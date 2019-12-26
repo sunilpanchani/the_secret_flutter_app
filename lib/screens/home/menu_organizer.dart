@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import '../detail_pages/attract_money.dart';
+import '../detail_pages/attract_money/attract_money.dart';
 
 class MenuOrganizer extends StatelessWidget {
   static const ImageName = [
@@ -78,7 +78,7 @@ class MenuOrganizer extends StatelessWidget {
                       maxLines: 1,
                       style: Theme.of(_context)
                           .textTheme
-                          .headline
+                          .caption
                           .copyWith(color: Colors.white)),
                 ),
               ),
