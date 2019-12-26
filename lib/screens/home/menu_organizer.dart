@@ -7,12 +7,16 @@ class MenuOrganizer extends StatelessWidget {
     'relaxation.jpg',
     'spirtual_healing.jpg',
     'visulization.jpg',
+    'dyoga.jpg',
+    'parenting.jpg'
   ];
   static const Title = [
     'Attract Money',
     'Relaxation',
-    'Spirtual healing',
-    'Visulization'
+    'Spirtual Healing',
+    'Visulization',
+    'Dynamic Yoga',
+    'Parenting'
   ];
 
   final BuildContext _context;
@@ -30,9 +34,38 @@ class MenuOrganizer extends StatelessWidget {
           children: [
             _buildImageRow(1),
             _buildImageRow(3),
+            _buildImageRow(5),
+            _resourceBanner(),
           ],
         ),
       );
+
+  Widget _resourceBanner(){
+    return Row(
+      children: <Widget>[
+         GestureDetector(
+              onTap: () {
+                //_openDetailPage(imageIndex);
+              },
+              child: Container(
+                /*
+                decoration: BoxDecoration(
+                  border: Border.all(width: 1, color: Colors.black38),
+                  borderRadius:
+                      const BorderRadius.all(const Radius.circular(8)),
+                ),
+                */
+               // margin: const EdgeInsets.all(0.3),
+                child: Image.asset(
+                  'assets/home_screen/resources.png',
+                  fit: BoxFit.cover,
+                ),
+                //padding: EdgeInsets.fromLTRB(0, 155.0, 0,0),
+              ),
+            ),
+      ],
+    );
+  }    
   Widget _buildImageRow(int imageIndex) => Row(
         children: [
           _buildDecoratedImage(imageIndex),
@@ -90,9 +123,12 @@ class MenuOrganizer extends StatelessWidget {
 
   void _openDetailPage(int imageIndex) {
     switch(imageIndex){
-      case 1: Navigator.push(_context,MaterialPageRoute(builder: (context) => AttractMoney(context)));
-              break;
-      case 2: Navigator.push(_context,MaterialPageRoute(builder: (context) => AttractMoney(context)));
+      case 1: Navigator.push(
+                _context,
+                MaterialPageRoute(
+                  builder: (context) => AttractMoney(context)
+                  )
+              );
               break;
       }
   }
