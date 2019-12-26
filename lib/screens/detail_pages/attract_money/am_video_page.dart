@@ -18,6 +18,7 @@ class AmVideoPage extends StatelessWidget {
               'assets/videos/attract_money.mp4',
             ),
             looping: true,
+            
           ),
           /*
           AmVideoPlayer(

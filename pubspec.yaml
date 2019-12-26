@@ -27,6 +27,7 @@ dependencies:
   # path_provider: ^1.1.0
   # audioplayers: ^0.13.5
   # provider: ^3.0.0+1
+  chewie_audio: ^1.0.0+1
   
 dev_dependencies:
   flutter_test:

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'am_video_page.dart';
 import '../text_content.dart';
-//import 'am_video.dart';
+import 'am_audio.dart';
 
 class AttractMoney extends StatelessWidget {
   final BuildContext context;
@@ -94,7 +94,7 @@ class AttractMoney extends StatelessWidget {
   listenAudio(){
     Navigator.push(
       context,
-      MaterialPageRoute(builder: (context) => AmVideoPage(),
+      MaterialPageRoute(builder: (context) => ChewieAudioDemo(),
       ),
     );
   }
