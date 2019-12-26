@@ -7,12 +7,16 @@ class MenuOrganizer extends StatelessWidget {
     'relaxation.jpg',
     'spirtual_healing.jpg',
     'visulization.jpg',
+    'dyoga.jpg',
+    'parenting.jpg'
   ];
   static const Title = [
     'Attract Money',
     'Relaxation',
-    'Spirtual healing',
-    'Visulization'
+    'Spirtual Healing',
+    'Visulization',
+    'Dynamic Yoga',
+    'Parenting'
   ];
 
   final BuildContext _context;
@@ -30,6 +34,7 @@ class MenuOrganizer extends StatelessWidget {
           children: [
             _buildImageRow(1),
             _buildImageRow(3),
+            _buildImageRow(5),
           ],
         ),
       );
@@ -90,10 +95,20 @@ class MenuOrganizer extends StatelessWidget {
 
   void _openDetailPage(int imageIndex) {
     switch(imageIndex){
-      case 1: Navigator.push(_context,MaterialPageRoute(builder: (context) => AttractMoney(context)));
+      case 1: Navigator.push(
+                _context,
+                MaterialPageRoute(
+                  builder: (context) => AttractMoney(context)
+                  )
+              );
               break;
-      case 2: Navigator.push(_context,MaterialPageRoute(builder: (context) => AttractMoney(context)));
-              break;
+      case 2: Navigator.push(
+                _context,
+                MaterialPageRoute(
+                  builder: (context) => AttractMoney(context)
+                  )
+              );
+              break
       }
   }
 }

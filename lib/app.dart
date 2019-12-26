@@ -10,6 +10,7 @@ class App extends StatelessWidget {
     return MaterialApp(
         title: 'The Secret',
         home: Splash(),
+        
         theme: ThemeData(
           // Define the default brightness and colors.
           brightness: Brightness.dark,
